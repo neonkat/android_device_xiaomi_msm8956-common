@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 Citrus-CAF Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := system/core/init
-LOCAL_SRC_FILES := init_msm.cpp
-LOCAL_MODULE := libinit_msm
+LOCAL_SRC_FILES := init_msm8956.cpp
+LOCAL_MODULE := libinit_msm8956
 
 include $(BUILD_STATIC_LIBRARY)
