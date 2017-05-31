@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
     camera.msm8952 \
     libqomx_core \
     libmm-qcamera \
-    Snap
+    SnapdragonCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
