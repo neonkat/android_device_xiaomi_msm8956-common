@@ -241,6 +241,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 telephony-ext
 
+PRODUCT_BOOT_JARS += \
+telephony-ext
+
 # Sound trigger
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
