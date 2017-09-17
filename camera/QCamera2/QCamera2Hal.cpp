@@ -47,12 +47,12 @@ static hw_module_t camera_common = {
 };
 
 camera_module_t HAL_MODULE_INFO_SYM = {
-    common: camera_common,
-    get_number_of_cameras: qcamera::QCamera2Factory::get_number_of_cameras,
-    get_camera_info: qcamera::QCamera2Factory::get_camera_info,
-    set_callbacks: qcamera::QCamera2Factory::set_callbacks,
-    get_vendor_tag_ops: qcamera::QCamera3VendorTags::get_vendor_tag_ops,
-    open_legacy: qcamera::QCamera2Factory::open_legacy,
+    .common                 = camera_common,
+    .get_number_of_cameras  = qcamera::QCamera2Factory::get_number_of_cameras,
+    .get_camera_info        = qcamera::QCamera2Factory::get_camera_info,
+    .set_callbacks          = qcamera::QCamera2Factory::set_callbacks,
+    .get_vendor_tag_ops     = qcamera::QCamera3VendorTags::get_vendor_tag_ops,
+    .open_legacy            = qcamera::QCamera2Factory::open_legacy,
 #ifndef USE_L_MR1
 #ifdef FLASHLIGHT_CONTROL
     set_torch_mode: qcamera::QCamera2Factory::set_torch_mode,
@@ -61,5 +61,5 @@ camera_module_t HAL_MODULE_INFO_SYM = {
 #endif
     init : NULL,
 #endif
-    reserved: {0}
+    .reserved               = {0}
 };
