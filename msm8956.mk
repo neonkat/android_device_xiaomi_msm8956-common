@@ -212,8 +212,8 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Power
-PRODUCT_PACKAGES += \
-    power.msm8952
+#PRODUCT_PACKAGES += \
+#    power.msm8952
 
 # Qualcomm dependencies
 PRODUCT_PACKAGES += \
