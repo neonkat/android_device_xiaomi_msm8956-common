@@ -205,6 +205,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-service \
     android.hardware.health@1.0
 
+# IMS
+PRODUCT_PACKAGES  += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # IPA Manager
 #PRODUCT_PACKAGES += \
     ipacm \
