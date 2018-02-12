@@ -218,7 +218,7 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # IPA Manager
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
